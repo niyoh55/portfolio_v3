@@ -27,6 +27,7 @@ const Home = () => {
           <h1 className="text-7xl font-extrabold">
             {arrHi.map((letter, index) => (
               <motion.span
+                key={index}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.2, delay: index * 0.2 }}
@@ -44,6 +45,7 @@ const Home = () => {
                   // transform: 1.5,
                 }}
                 transition={{ duration: 0.2 }}
+                key={index}
               >
                 {letter === " " ? (
                   <motion.span
@@ -79,6 +81,7 @@ const Home = () => {
           <h1>
             {arrDesc.map((letter, index) => (
               <motion.span
+                key={index}
                 className=" text-2xl tracking-widest"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
