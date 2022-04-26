@@ -38,10 +38,30 @@ const Home = () => {
       </motion.div>
     ));
   };
+  // useEffect(() => {
+  //   window.addEventListener("scroll", console.log(window.scrollY));
+  // }, []);
+
+  const mainPage = useAnimation();
+
+  const doAnimation = async () => {
+    await mainPage.start(() => ({
+      scale: 1,
+      transition: { duration: 0.6 },
+    }));
+  };
+
+  useEffect(() => {
+    doAnimation();
+  }, []);
 
   const currentPath = router.asPath.toString();
   return (
-    <div className="flex flex-col justify-center items-center w-full h-full min-w-screen min-h-screen">
+    <motion.div
+      initial={{ scale: 0.5 }}
+      animate={mainPage}
+      className="flex flex-col justify-center items-center w-full h-full min-w-screen min-h-screen lg:mx-40"
+    >
       <Head>
         <title>Skills</title>
       </Head>
@@ -50,14 +70,14 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
       >
-        <h1 className="font-nunito text-7xl mb-20 mt-10 text-white tracking-widest text-center">
+        <h1 className="font-nunito text-7xl lg:mb-20 mt-10 text-white tracking-widest text-center">
           My skills
         </h1>
       </motion.div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-10 my-10 lg:my-0 lg:grid-cols-4 lg:w-full px-10 md:gap-x-10 lg:gap-y-20 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-10 my-10 lg:my-0 lg:grid-cols-4 lg:w-full  md:gap-x-10 lg:gap-y-20 ">
         <GridDisplay />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

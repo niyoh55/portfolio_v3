@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { useRouter } from "next/router";
 import { motion, useAnimation } from "framer-motion";
@@ -23,6 +23,13 @@ const Home = () => {
     setTimeout(() => router.push(path), 500);
   };
 
+  // useEffect(() => {
+  //   window.addEventListener("scroll", console.log(window.scrollY));
+  // }, []);
+  // if (typeof window !== undefined) {
+  //   console.log(window.innerWidth);
+  // }
+
   const currentPath = router.asPath.toString();
   return (
     <motion.div className="flex w-full min-w-screen" animate={mainPage}>
@@ -45,7 +52,7 @@ const Home = () => {
             ))}
           </h1>
 
-          <h1 className="lg:text-[13rem] md:text-[10rem] sm:text-[8rem] text-[5rem] leading-none">
+          <h1 className="xl:text-[13rem] lg:text-[12rem] md:text-[10rem] sm:text-[8rem] text-[5rem] leading-none">
             {arrName.map((letter, index) => (
               <motion.span
                 key={index}
@@ -57,7 +64,7 @@ const Home = () => {
                 }}
                 transition={{
                   duration: 0.2,
-                  delay: (index + 1) * 0.2 + 0.5,
+                  delay: (index + 1) * 0.1 + 0.5,
                 }}
               >
                 {letter}
@@ -74,7 +81,7 @@ const Home = () => {
                 animate={{ opacity: 1 }}
                 transition={{
                   duration: 0.2,
-                  delay: (index + 1) * 0.2 + arrName.length * 0.2 + 0.5,
+                  delay: (index + 1) * 0.2 + arrName.length * 0.1 + 0.5,
                 }}
               >
                 {letter + " "}
@@ -87,7 +94,8 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{
               duration: 0.5,
-              delay: (arrName.length + arrHi.length + arrDesc.length) * 0.2,
+              delay:
+                arrName.length * 0.1 + (arrHi.length + arrDesc.length) * 0.2,
             }}
             onClick={() => redirectPage("/contact")}
             className="border-2 border-yellowMain text-yellowMain hover:bg-yellowMain active:scale-110 hover:text-black w-auto px-5 py-3 mt-5 self-start tracking-widest font-nunito text-xl"
