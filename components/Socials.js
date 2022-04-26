@@ -10,7 +10,7 @@ const Socials = () => {
       <a href="https://www.facebook.com/niyohedwyn.villanueva/">
         <FaFacebookSquare className="h-5 w-5 text-icon hover:text-yellow-500 transition duration-200" />
       </a>
-      <a href="https://twitter.com/niyohhh" target="_blank">
+      <a href="https://twitter.com/niyohhh">
         <FaTwitterSquare className="h-5 w-5 text-icon hover:text-yellow-500 transition duration-200" />
       </a>
     </>
