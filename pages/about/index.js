@@ -2,17 +2,20 @@ import { motion } from "framer-motion";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 
 const About = () => {
   return (
     <div className="w-full h-full">
+      <Head>
+        <title>About</title>
+      </Head>
       <motion.div
         initial={{ height: "100vh" }}
         animate={{ height: ["100vh", "0vh"] }}
         transition={{ duration: 0.8, ease: "easeIn" }}
         className="h-[100vh] bg-black "
       ></motion.div>
-
       <motion.div
         initial={{ height: "0vh" }}
         animate={{ height: ["0%", "100%"], minHeight: ["0vh", "100vh"] }}
