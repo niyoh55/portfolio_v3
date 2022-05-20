@@ -66,7 +66,7 @@ const About = () => {
                   {/* I was amazed on how programming works, how it is
                     done, the different programming languages and the different
                     applications of it. */}
-                  {/* <p>
+                  <p>
                     {"\t"}I have been programming since I was in College. I was
                     first introduced to the concept of programming on my first
                     major course, on this course we were taught the basics of
@@ -95,8 +95,7 @@ const About = () => {
                     Frameworks are, I took courses on Udemy regarding ReactJS,
                     React Native and NodeJS. And I&apos;m still learning
                     everyday 😁
-                  </p> */}
-                  wews
+                  </p>
                 </div>
               </motion.div>
             </div>
