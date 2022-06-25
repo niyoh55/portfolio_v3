@@ -48,16 +48,30 @@ const Home = () => {
 
         <p>
           On the Internet:{" "}
-          <a className="underline" href="https://www.youtube.com/">
+          <a
+            className="underline"
+            href="https://www.linkedin.com/in/niyoh-edwyn-villanueva-5b2524113/"
+          >
             Linkedin
           </a>{" "}
           /{" "}
-          <a className="underline" href="https://www.youtube.com/">
+          <a
+            className="underline"
+            href="https://www.facebook.com/niyohedwyn.villanueva/"
+          >
             Facebook
           </a>{" "}
           /{" "}
-          <a className="underline" href="https://www.youtube.com/">
+          <a className="underline" href="https://twitter.com/niyohhh">
             Twitter
+          </a>{" "}
+          /{" "}
+          <a
+            href="https://drive.google.com/file/d/1rHF9N882vJ1dLIBsT0K_vGGjC2dIChN3/view?usp=sharing"
+            download
+            className="underline"
+          >
+            Download CV
           </a>
         </p>
       </div>

@@ -1,5 +1,10 @@
 import React from "react";
-import { FaLinkedin, FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaFileDownload,
+} from "react-icons/fa";
 
 const Socials = () => {
   return (
@@ -12,6 +17,13 @@ const Socials = () => {
       </a>
       <a href="https://twitter.com/niyohhh">
         <FaTwitterSquare className="h-5 w-5 text-icon hover:text-yellow-500 transition duration-200" />
+      </a>
+
+      <a
+        href="https://drive.google.com/file/d/1rHF9N882vJ1dLIBsT0K_vGGjC2dIChN3/view?usp=sharing"
+        download
+      >
+        <FaFileDownload className="h-5 w-5 text-icon hover:text-yellow-500 transition duration-200" />
       </a>
     </>
   );
