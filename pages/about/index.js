@@ -67,7 +67,7 @@ const About = () => {
                     done, the different programming languages and the different
                     applications of it. */}
                   <p>
-                    {"\t"}I have been programming since I was in College. I was
+                    {"\t"}I&apos;m pretty much a self-taught front-end developer. I began programming since I was in College. I was
                     first introduced to the concept of programming on my first
                     major course, on this course we were taught the basics of
                     C++. I enjoyed and excelled in every course where

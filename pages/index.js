@@ -39,7 +39,7 @@ const Home = () => {
 
       <div className="flex flex-col justify-center w-auto ">
         <div className="flex flex-col gap-y-10 sm:gap-y-0 px-5 md:px-20 2xl:px-30 text-3xl md:text-5xl xl:text-7xl font-nunito tracking-widest text-white w-auto md:mt-0 mt-20">
-          <h1 className="text-[2em] mb-3">
+          <h1 className="2xl:text-[13rem] xl:text-[8rem] lg:text-[7rem] md:text-[6rem] sm:text-[6rem] text-[5rem] mb-3">
             {arrHi.map((letter, index) => (
               <motion.span
                 key={index}
@@ -52,7 +52,7 @@ const Home = () => {
             ))}
           </h1>
 
-          <h1 className="xl:text-[13rem] lg:text-[12rem] md:text-[10rem] sm:text-[8rem] text-[5rem] leading-none">
+          <h1 className="2xl:text-[13rem] xl:text-[8rem] lg:text-[7rem] md:text-[6rem] sm:text-[6rem] text-[5rem] leading-none">
             {arrName.map((letter, index) => (
               <motion.span
                 key={index}
