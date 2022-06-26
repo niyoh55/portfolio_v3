@@ -9,6 +9,7 @@ import nextLogo from "./../../images/nextjs-removebg-preview.png";
 import nodeLogo from "./../../images/node-removebg-preview.png";
 import reactLogo from "./../../images/react-removebg-preview.png";
 import rnLogo from "./../../images/rn-removebg-preview.png";
+import mongoLogo from "./../../images/download-removebg-preview.png";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -23,6 +24,7 @@ const Home = () => {
     htmlLogo,
     cssLogo,
     nodeLogo,
+    mongoLogo,
   ];
 
   const GridDisplay = (props) => {

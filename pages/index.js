@@ -11,7 +11,9 @@ const Home = () => {
   //const arrName = [`I'm`, " ", `Niyoh`, " ", `Edwyn`];
 
   const arrName = `I'm Niyoh Edwyn`.split("");
-  const arrDesc = "Full Stack Developer / Freelancer".split(" ");
+  
+  const arrDesc = "Full Stack Developer".split(" ");
+  //const arrDesc = "Full Stack Developer / Freelancer".split(" ");
 
   const redirectPage = (path) => {
     mainPage.start(() => ({
