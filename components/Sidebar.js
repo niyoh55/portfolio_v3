@@ -17,7 +17,7 @@ const Sidebar = () => {
 
   return (
     <div className="md:h-auto md:min-h-screen bg-sidebar">
-      <div className="md:w-14 w-full shadow-xl h-14 md:h-screen flex flex-row flex-none md:flex-col items justify-center py-4 bg-sidebar dark:bg-gray-800">
+      <div className="md:w-14 w-full shadow-xl h-14 md:h-screen flex flex-row flex-none md:flex-col items justify-between px-10 md:px-0 py-4 bg-sidebar dark:bg-gray-800">
         {/* <div className="h-full w-1/4 md:w-full md:h-1/4"></div> */}
         <Navigation />
         <div className="h-full md:h-1/4 w-1/4 md:w-full flex flex-row md:flex-col justify-center md:justify-end items-center gap-x-2 md:gap-y-5">

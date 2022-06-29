@@ -33,7 +33,7 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3, delay: index * 0.3 }}
-        className="hover:scale-110 transition-all duration-400 w-60 h-60 flex justify-center items-center "
+        className="hover:scale-110 transition-all duration-400 w-48 h-48 flex justify-center items-center bg-[#f3f2f3] p-2 rounded-3xl "
         key={index}
       >
         <Image src={logo} />
