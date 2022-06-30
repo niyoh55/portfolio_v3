@@ -76,7 +76,7 @@ const Home = () => {
           My skills
         </h1>
       </motion.div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-10 my-10 lg:my-0 lg:grid-cols-4 lg:w-full md:gap-x-10 lg:gap-y-20 xl:gap-x-40 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10 my-10 lg:my-0  lg:w-full  sm:gap-x-10 lg:gap-y-20 lg:gap-x-20 xl:gap-x-40 ">
         <GridDisplay />
       </div>
     </motion.div>
